@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async rewrites() {
+    return {
+      fallback: [
+        {
+          source: "/logo.jpg",
+          destination: "https://www.shalomfree.kr/images/logo.jpg",
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;
