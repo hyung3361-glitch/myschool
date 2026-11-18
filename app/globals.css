@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #1f2e25;
+  --forest: #2e5a44;
+  --forest-dark: #214231;
+  --forest-light: #e8f2ec;
+  --sunshine: #f4b942;
+  --sunshine-light: #fff6db;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Pretendard Variable",
+    "Pretendard",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    sans-serif;
+  word-break: keep-all;
+}
